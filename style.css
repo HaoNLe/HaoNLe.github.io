@@ -2,6 +2,8 @@ body {
 	font-family:"Helvetica";
 }
 .navbar{
+	font-size: medium;
+	font-weight: bold;
 	background: #00668d;
 }
 
