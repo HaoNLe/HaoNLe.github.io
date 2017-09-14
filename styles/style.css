@@ -2,6 +2,13 @@ body{
 	font-family: 'Lato', sans-serif;
 }
 
+.section-anchor {
+	display: block;
+	position: relative;
+    top: -100px;
+    visibility: hidden;
+}
+
 .landing-title {
 	padding-top: 2.5rem;
 	padding-bottom: 0.5rem;
@@ -67,6 +74,10 @@ a.navbar-item:hover {
 	color: white;
 }
 
+.scroll-down-button:hover{
+
+}
+
 .scroll-icon{
-	
+
 }
