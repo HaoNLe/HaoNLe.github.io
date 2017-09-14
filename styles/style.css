@@ -1,3 +1,72 @@
-a.navbar-item:hover{
+body{
+	font-family: 'Lato', sans-serif;
+}
+
+.landing-title {
+	padding-top: 2.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.navbar-item {
+	transition-duration: 0.2s;
+}
+
+.landingPage {
+	background-image: url(images/12apostles.jpg);
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+
+.img-headshot {
+	border-radius: 50%;
+	max-width: 200px;
+	max-height: 200px;
+	margin: auto;
+	display: block;
+}
+
+a.navbar-item:hover {
 	background-color: #ababab;
+}
+
+.landing-footer {
+	padding-bottom: 1rem;
+}
+
+.download-wrapper {
+	padding-bottom: 1.5rem;
+}
+
+.button{
+	transition-duration: 0.2s;
+}
+
+.button-fade {
+	display: block;
+	background-color: transparent;
+	color: #7ab5ce;
+	border-radius: 8px;
+	border: 2px solid #7ab5ce;
+	margin: auto;
+	max-width: 125px;
+}
+
+.button-fade:hover {
+	background-color: #7ab5ce;
+	color: white;
+	border: 2px solid #7ab5ce;
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.scroll-down-button{
+	margin: auto;
+	display: block;
+	max-width: 50px;
+	background-color: transparent;
+	border: transparent;
+	color: white;
+}
+
+.scroll-icon{
+	
 }
