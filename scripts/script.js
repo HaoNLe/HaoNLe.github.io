@@ -20,6 +20,26 @@ $(document).ready(function(){
       });
     });
   }
+  
+  //if we click on something outside of navbar when its open, the navbar closes.
+  $(document).click(function (event) {
+        var navbarBurger = $navbarBurgers[0];
+        console.log($navbarBurgers);
+        console.log(navbarBurger);
+        // Get element we clicked on
+        var clickover = $(event.target);
+        // Check if burger is open
+        var _opened = $(navbarBurger).hasClass("is-active");
+        console.log('opened: ' + _opened);
+        console.log('is-active: ' + clickover.hasClass("is-active"));
+        // if burger open AND element isn't our menu
+        if (_opened === true && !clickover.hasClass("is-active")) {
+            var target = $navbarBurgers[0].dataset.target;
+            var $target = document.getElementById(target);
+            $navbarBurgers[0].classList.toggle('is-active');
+            $target.classList.toggle('is-active');
+        }
+    });
 
   // Add smooth scrolling to all links
   $("a").on('click', function(event) {
