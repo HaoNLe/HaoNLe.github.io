@@ -1,44 +1,34 @@
 <html>
 <head>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script src="https://github.com/kswedberg/jquery-smooth-scroll/blob/master/jquery.smooth-scroll.min.js"></script>
-	<script>
-	$('.smooth').on('click', function() {
-	    $.smoothScroll({
-	        scrollElement: $('body'),
-	        scrollTarget: '#' + this.id
-	    });
+	<script type="text/javascript" src="scripts/script.js"></script>
 
-	    return false;
-	});
-</script>
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
-<link rel="stylesheet" type="text/css" href="style.css" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css" />
 
 </head>
 
 <body>
-	<nav id="nav"; class="navbar">
+	<nav id="nav"; class="navbar" style="position: fixed; top: 0; left: 0; right: 0;">
 		<div class="navbar-brand">
 		    <a class="navbar-item" href="#Landing">
-		    <h1>Hao Le</h1>
+		    <h1 style="font-family: Open Sans;">Hao Le</h1>
 		    </a>
 
-		    <a class="navbar-item is-hidden-desktop" href="https://github.com/HaoNLe" target="_blank">
+		    <a class="navbar-item" href="https://github.com/HaoNLe" target="_blank">
 		      <span class="icon" style="color: #333;">
 		        <i class="fa fa-lg fa-github"></i>
 		      </span>
 		    </a>
 
-		    <a class="navbar-item is-hidden-desktop" href="https://www.linkedin.com/in/hao-le/" target="_blank">
+		    <a class="navbar-item" href="https://www.linkedin.com/in/hao-le/" target="_blank">
 		      <span class="icon" style="color: #007bb6;">
 		        <i class="fa fa-lg fa-linkedin-square"></i>
 		      </span>
 		    </a>
 
-		    <div class="navbar-burger burger" data-target="navMenuTransparentExample">
+		    <div class="navbar-burger burger" data-target="navMenu">
 		      <span></span>
 		      <span></span>
 		      <span></span>
@@ -71,39 +61,38 @@
 
   </nav>
 
-	<section id="page1"; class="landing">
-	  <div class= "landing-container">
-			<div class="wrapper">
-				<div class="container">
-					<h1 class="name-heading"> Hao Le
-					</h1>
-				</div>
+	<section id="page1"; class="hero is-fullheight" style="background-image: url(images/LandingResized.JPG); background-size: cover; background-repeat: no-repeat; background-position: top;">
+		<a id="Landing"></a>
+		<div class="hero-body">
+			<div class= "container">
+				<h1 class="title is-1 has-text-centered" style="color: #ffffff;">Hao Le</h1>
+				<h2 class="subtitle  has-text-centered" style="color: #ffffff;">TODO Tag Line</h2>
 			</div>
 		</div>
 	</section>
 
-	<section id="page2"; class="page">
-	  <a id="About" class="smooth"></a>
+	<section id="page2"; class="section">
+	  <a id="About"></a>
 	  <h2 class="pageHeader">About page content goes here.</h2>
 	</section>
 
-	<section id="page3"; class="page">
-	  <a id="Skills" class="smooth"></a>
+	<section id="page3"; class="section">
+	  <a id="Skills"></a>
 		<h2 class="pageHeader">Skills page content goes here.</h2>
 	</section>
 
-	<section id="page4"; class="page">
-	  <a id="Projects" class="smooth"></a>
+	<section id="page4"; class="section">
+	  <a id="Projects"></a>
 		<h2 class="pageHeader">Projects page content goes here.</h2>
 	</section>
 
-	<section id="page5"; class="page">
-	  <a id="Experience" class="smooth"></a>
+	<section id="page5"; class="section">
+	  <a id="Experience"></a>
 		<h2 class="pageHeader">Experience page content goes here.</h2>
 	</section>
 
-	<section id="page6"; class="page">
-	  <a id="Contact" class="smooth"></a>
+	<section id="page6"; class="section">
+	  <a id="Contact"></a>
 		<h2 class="pageHeader">Contact page content goes here.</h2>
 	</section>
 
