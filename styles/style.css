@@ -172,11 +172,6 @@ a.navbar-item:hover {
 	background-color: rgba(32, 32, 32, .90);
 }
 
-.has-border{
-	border-radius: 5%;
-	border: 3px solid #72abc3;
-}
-
 .bg-transparent{
 	background-color: transparent;
 }
