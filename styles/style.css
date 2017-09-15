@@ -18,7 +18,7 @@ body{
 	transition-duration: 0.2s;
 }
 
-.landingPage {
+.landing-page {
 	background-image: url(images/12apostles.jpg);
 	background-repeat: no-repeat;
 	background-position: bottom;
@@ -45,8 +45,10 @@ a.navbar-item:hover {
 	padding-bottom: 1rem;
 }
 
-.download-wrapper {
-	padding-bottom: 1.5rem;
+.flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
 
 .button{
@@ -101,4 +103,10 @@ a.navbar-item:hover {
 
 .is-white{
 	color:white;
+}
+
+.icon-container{
+	background-color: transparent;
+	max-width: 7.5rem;
+	max-height: 7.5rem;
 }
