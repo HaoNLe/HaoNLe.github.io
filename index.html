@@ -64,7 +64,7 @@
 
 	  </nav>
 
-		<section id="page1"; class="hero is-fullheight" style="background-image: url(images/12apostles.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
+		<section id="landing"; class="hero is-fullheight" style="background-image: url(images/12apostles.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
 			<a id="Landing"></a>
 			<div class="hero-body">
 				<div class= "container">
@@ -95,7 +95,7 @@
 			</div>
 		</section>
 			   		
-		<section id="page2"; class="section is-white" style="background-color: #2a2a2a;">
+		<section id="about"; class="section is-white" style="background-color: #2a2a2a;">
 			<a id="About" class="section-anchor"></a>
 			<div class="container">
 				<div class="columns is-8">
@@ -204,18 +204,24 @@
 			</div>
 		</section>
 		 
-		<section id="page3"; class="section">
+		<section id="skills"; class="section" style="min-height: 100vh;">
 			<a id="Skills" class="section-anchor"></a>
 			<div class="container">
-				<h2 class="title is-3">Skills</h2>
-				<div class="columns">
-
+				<h2 class="title is-2">Skills</h2>
+				<div class="columns" style="margin:0px 0px 3rem;">
+					<div class="column is-10 is-offset-1 has-text-left">
+						<p class="is-size-3 is-size-4-tablet is-size-5-mobile">
+							As a result of switching my major halfway through college I've had to hit the ground running. You can view the laundry list of languages, tools, and knowledge I've picked up on the way here (except for sleep and profanity. I picked those up a while back):
+						</p>
+					</div>
+				</div>
+				<div class="columns is-size-3 is-size-4-tablet is-size-5-mobile">
 					<div class="column">
 						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-5x fa-code"></i>
+			        		<i class="fa fa-4x fa-code"></i>
 			      		</span>
 			      		<span class="list-divider"></span>
-						<div class="columns med-text has-text-centered">				      		
+						<div id="languages" class="columns has-text-centered">				      		
 					      	<div class="column flex-container">
 				      			<div class="item">Java</div>
 				      			<div class="item">C</div>
@@ -233,10 +239,10 @@
 					
 					<div class="column">
 						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-5x fa-wrench"></i>
+			        		<i class="fa fa-4x fa-wrench"></i>
 			      		</span>
 			      		<span class="list-divider"></span>
-						<div class="columns med-text has-text-centered">				      		
+						<div id="tools" class="columns has-text-centered">				      		
 					      	<div class="column flex-container">
 				      			<div class="item">Git</div>
 				      			<div class="item">NodeJS</div>
@@ -256,10 +262,10 @@
 					
 					<div class="column">
 						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-5x fa-book"></i>
+			        		<i class="fa fa-4x fa-book"></i>
 			      		</span>
 			      		<span class="list-divider"></span>
-			      		<div class="columns med-text has-text-centered">				      		
+			      		<div id="knowledge" class="columns has-text-centered">				      		
 					      	<div class="column flex-container">
 				      			<div class="item">Intro AI</div>
 				      			<div class="item">OS</div>
@@ -270,6 +276,8 @@
 				      			<div class="item">Linear Algebra</div>
 				      			<div class="item">Discrete Math</div>
 				      			<div class="item">Probability</div>
+				      			<div class="item">Gitflow Workflow</div>
+				      			<div class="item">Trunk Development</div>
 					      	</div>
 					    </div>
 			      		<span class="list-divider-bottom"></span>
@@ -279,13 +287,13 @@
 			</div>
 		</section>
 		
-		<section id="page4"; class="section">
+		<section id="projects"; class="section">
 			<a id="Projects" class="section-anchor"></a>
 			<div class="container">
-				<h2 class="title is-3">Projects</h2>
+				<h2 class="title is-2">Projects</h2>
 				<div class="columns">
 				  <div class="column">
-				 	WIP
+				  	WIP
 				  </div>
 				  <div class="column">
 				    WIP
@@ -294,19 +302,26 @@
 			</div>
 		</section>
 		
-		<section id="page5"; class="section">
+		<section id="experience"; class="section" style="background-image: url(images/expBG.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
 			<a id="Experience" class="section-anchor"></a>
 			<div class="container">
-				<h2 class="title is-3">Experience</h2>
+				<h2 class="title is-2 is-white">Experience</h2>
 				<div class="columns">
-					<div class="column is-10 has-text-left">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac augue tristique nisl laoreet sagittis. Proin ornare, justo quis </p>
+					<div class="column is-10 has-text-left has-text-white">
+						<div class="box has-semi-transparent-bg has-text-white">
+							<h3 class="subtitle is-white">P.I.N.G Inc. | Software Engineer Intern | Jun 17 - Sep 17</h3>
+							<p>My Summer was spent working with two motivated and talented Engineers. I was entrusted with an integration between their product and E-mail Server. Built from complete scratch, the undertaking helped me learn how to research, design, and implement software from the ground up while keeping in mind scalability, efficiency, and security. I even ported my project to another language/framework after incompatibilities were unearthed. A gruelsome, yet fulfilling and worthwhile experience.</p>
+						</div>
+						<div class="box has-semi-transparent-bg has-text-white">
+							<h3 class="subtitle is-white">CS61B/CSM | Lab Assistant/Mentor | Aug 16 - May 17</h3>
+							<p>Ah, the class that changed my life and ultimately motivated me to drop pre-med for a pursuit Computer Science halfway through college. I loved the class so much that I decided to mentor students as a part of Computer Science Mentors (on-campus-club) and lab assist for the course  for the next year. This role has since been retired in favor of other goals</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<section id="page6"; class="section" style="background-color: #2a2a2a;">
+		<section id="contact"; class="section" style="background-color: #2a2a2a;">
 			<a id="Contact" class="section-anchor"></a>
 			<div class="container">
 				<h2 class="title is-3 is-white has-text-centered">Contact Me</h2>
