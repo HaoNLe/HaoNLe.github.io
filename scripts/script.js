@@ -41,7 +41,7 @@ $(document).ready(function(){
         }
     });
 
-  // Add smooth scrolling to all links
+  /* Add smooth scrolling to all links */
   $("a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
@@ -61,7 +61,13 @@ $(document).ready(function(){
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
-    } // End if
+    }
   });
 
+});
+/* Loading function */
+$(window).load(function() {
+  // All images are loaded now.
+  $('div#loader').fadeOut(1000, "linear");
+  $("div#main-container").addClass("load");
 });
