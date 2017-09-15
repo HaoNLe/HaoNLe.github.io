@@ -49,6 +49,7 @@ a.navbar-item:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
+	justify-content: space-around;
 }
 
 .button{
@@ -74,11 +75,11 @@ a.navbar-item:hover {
 
 .list-divider{
 	display: block;
-	margin: auto;
 	background-color: #72abc3;
 	width: 200px;
 	height: 3px;
-	margin-top: 40px;
+	margin: 40px auto 25px;
+
 }
 
 .scroll-down-button{
@@ -107,6 +108,12 @@ a.navbar-item:hover {
 
 .icon-box{
 	background-color: transparent;
-	width: 9rem;
-	height: 5.6rem;
+	border: 1px solid #b6b6b6;
+	width: 10rem;
+	height: 6.18rem;
+	vertical-align: middle;
+}
+
+.centered-in-box {
+	padding-bottom: 1rem;
 }
