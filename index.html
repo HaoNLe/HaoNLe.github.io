@@ -1,18 +1,24 @@
 <html>
 <head>
+	<!-- STYLE SHEETS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
 	<link rel="stylesheet" type="text/css" href="styles/style.css" />
+	
+	<!-- VIEWPORT -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
+	<!-- LOADING SCREEN -->
 	<div id="loader">
 		<span class="icon is-large">
 		  <i class="fa fa-3x fa-spin fa-cog"></i>
 		</span>
 	</div>
+	<!-- MAIN CONTENT -->
 	<div id="main-container">
+		<!-- NAVIGATION BAR -->
 		<nav id="nav"; class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index:999999;">
 			<div class="navbar-brand">
 			    <a class="navbar-item" href="#Landing">
@@ -61,9 +67,8 @@
 				    </a>
 	  			</div>
 	  		</div>
-
-	  </nav>
-
+	  	</nav>
+		<!-- LANDING -->
 		<section id="landing"; class="hero is-fullheight" style="background-image: url(images/12apostles.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
 			<a id="Landing"></a>
 			<div class="hero-body">
@@ -94,7 +99,8 @@
 				</div>
 			</div>
 		</section>
-			   		
+			   	
+		<!-- ABOUT -->
 		<section id="about"; class="section is-white" style="background-color: #2a2a2a;">
 			<a id="About" class="section-anchor"></a>
 			<div class="container">
@@ -198,12 +204,51 @@
 							</div>
 						</div>
 					<div class="column is-5">
-						<img class="img-about-me" src="images/Headshot.jpg" alt="headshot">
+						<!-- <img class="img-about-me" src="images/Headshot.jpg" alt="headshot"> -->
+						<div class="slideshow-container">
+						  <div class="mySlides fade">
+						    <div class="numbertext">1 / 5</div>
+						    <img class="slide-img" src="images/Carouselimg1.jpg">
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">2 / 5</div>
+						    <img class="slide-img" src="images/Carouselimg2.jpg">
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">3 / 5</div>
+						    <img class="slide-img" src="images/Carouselimg3.jpg">
+						  </div>
+
+						   <div class="mySlides fade">
+						    <div class="numbertext">4 / 5</div>
+						    <img class="slide-img" src="images/Carouselimg4.jpg">
+						  </div>
+
+						  <div class="mySlides fade">
+						    <div class="numbertext">5 / 5</div>
+						    <img class="slide-img" src="images/Carouselimg5.jpg">
+						  </div>
+						  
+						</div>
+						<br>
+
+						<div style="text-align:center">
+							<a id="backward" class="prev">&#10094;</a>
+							<span id="1" class="dot" ></span> 
+							<span id="2" class="dot" ></span> 
+							<span id="3" class="dot" ></span> 
+							<span id="4" class="dot" ></span> 
+							<span id="5" class="dot" ></span> 
+							<a id="forward" class="next">&#10095;</a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		 
+		
+		<!-- SKILLS --> 
 		<section id="skills"; class="section" style="min-height: 100vh;">
 			<a id="Skills" class="section-anchor"></a>
 			<div class="container">
@@ -287,6 +332,7 @@
 			</div>
 		</section>
 		
+		<!-- PROJECTS -->
 		<section id="projects"; class="section">
 			<a id="Projects" class="section-anchor"></a>
 			<div class="container">
@@ -302,25 +348,27 @@
 			</div>
 		</section>
 		
+		<!-- EXPERIENCE -->
 		<section id="experience"; class="section" style="background-image: url(images/expBG.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
 			<a id="Experience" class="section-anchor"></a>
 			<div class="container">
 				<h2 class="title is-2 is-white">Experience</h2>
 				<div class="columns">
-					<div class="column is-10 has-text-left has-text-white">
+					<div class="column is-10 is-offset-1 has-text-left has-text-white is-size-3 is-size-4-tablet is-size-5-mobile">
 						<div class="box has-semi-transparent-bg has-text-white">
-							<h3 class="subtitle is-white">P.I.N.G Inc. | Software Engineer Intern | Jun 17 - Sep 17</h3>
+							<h3 class="subtitle is-white is-size-3 is-size-4-tablet is-size-5-mobile">P.I.N.G Inc. | Software Engineer | Jun 17 - Sep 17</h3>
 							<p>My Summer was spent working with two motivated and talented Engineers. I was entrusted with an integration between their product and E-mail Server. Built from complete scratch, the undertaking helped me learn how to research, design, and implement software from the ground up while keeping in mind scalability, efficiency, and security. I even ported my project to another language/framework after incompatibilities were unearthed. A gruelsome, yet fulfilling and worthwhile experience.</p>
 						</div>
 						<div class="box has-semi-transparent-bg has-text-white">
-							<h3 class="subtitle is-white">CS61B/CSM | Lab Assistant/Mentor | Aug 16 - May 17</h3>
+							<h3 class="subtitle is-white is-size-3 is-size-4-tablet is-size-5-mobile">CS61B/CSM | Lab Assistant/Mentor | Aug 16 - May 17</h3>
 							<p>Ah, the class that changed my life and ultimately motivated me to drop pre-med for a pursuit Computer Science halfway through college. I loved the class so much that I decided to mentor students as a part of Computer Science Mentors (on-campus-club) and lab assist for the course  for the next year. This role has since been retired in favor of other goals</p>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-
+		
+		<!-- CONTACT -->
 		<section id="contact"; class="section" style="background-color: #2a2a2a;">
 			<a id="Contact" class="section-anchor"></a>
 			<div class="container">
@@ -329,12 +377,14 @@
 				<div class="columns">
 					<div class="column is-half is-offset-one-quarter">
 						<h5 class="subtitle is-5 is-white">Connect with me!</h5>
-						<p class="is-white">Don't hesitate to shoot me an email at <strong class="is-white">haole@berkeley.edu</strong>. I love discussing ideas and exploring opportunities!</p>
+						<p class="is-white is-size-3 is-size-4-tablet is-size-5-mobile">Don't hesitate to shoot me an email at <strong class="is-white">haole@berkeley.edu</strong>. I love discussing ideas and exploring opportunities!</p>
 					</div>
 				</div>
 			</div>
 		</section>
 	</div>
+
+	<!-- SCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 	<script type="text/javascript" src="scripts/script.js"></script>
 </body>
