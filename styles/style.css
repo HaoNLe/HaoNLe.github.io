@@ -105,8 +105,8 @@ a.navbar-item:hover {
 	color:white;
 }
 
-.icon-container{
+.icon-box{
 	background-color: transparent;
-	max-width: 7.5rem;
-	max-height: 7.5rem;
+	width: 9rem;
+	height: 5.6rem;
 }
