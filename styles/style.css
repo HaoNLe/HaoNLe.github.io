@@ -55,6 +55,23 @@ body{
 	display: block;
 }
 
+.scroll-down-button{
+	margin: auto;
+	display: block;
+	max-width: 500px;
+	background-color: transparent;
+	border: transparent;
+	color: white;
+}
+
+.scroll-down-button:hover{
+
+}
+
+.scroll-icon{
+
+}
+
 .img-about-me{
 	border-radius: 5%;
 	margin: auto;
@@ -72,7 +89,7 @@ a.navbar-item:hover {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 .button{
@@ -101,24 +118,15 @@ a.navbar-item:hover {
 	background-color: #72abc3;
 	width: 200px;
 	height: 3px;
-	margin: 40px auto 25px;
-
+	margin: 3rem auto 1.85rem;
 }
 
-.scroll-down-button{
-	margin: auto;
+.list-divider-bottom{
 	display: block;
-	max-width: 500px;
-	background-color: transparent;
-	border: transparent;
-	color: white;
-}
-.scroll-down-button:hover{
-
-}
-
-.scroll-icon{
-
+	background-color: #72abc3;
+	width: 200px;
+	height: 3px;
+	margin: 1rem auto 3rem;
 }
 
 .column {
@@ -135,8 +143,25 @@ a.navbar-item:hover {
 	width: 10rem;
 	height: 6.18rem;
 	vertical-align: middle;
+	margin: 0px 10px;
+}
+
+.icon-margin{
+	margin: 10px 10px;
 }
 
 .centered-in-box {
 	padding-bottom: 1rem;
+}
+
+.med-text{
+	font-size:1.5em;
+}
+
+.item {
+	padding: 2.5px 10px 2.5px;
+	border: 1.5px solid #4a4a4a;
+	border-radius: 5%;
+	min-width: 100px;
+	margin: .25rem;
 }
