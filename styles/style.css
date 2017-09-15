@@ -139,6 +139,10 @@ a.navbar-item:hover {
 	color:white;
 }
 
+.is-theme-color{
+	color:#72abc3;
+}
+
 .icon-box{
 	background-color: transparent;
 	border: 1px solid #b6b6b6;
@@ -167,6 +171,21 @@ a.navbar-item:hover {
 .has-semi-transparent-bg{
 	background-color: rgba(32, 32, 32, .90);
 }
+
+.has-border{
+	border-radius: 5%;
+	border: 3px solid #72abc3;
+}
+
+.bg-transparent{
+	background-color: transparent;
+}
+
+.has-no-shadow{
+	box-shadow: none;
+}
+
+/* CAROUSEL STYLE */
 
 .slideshow-container {
   max-width: 1000px;

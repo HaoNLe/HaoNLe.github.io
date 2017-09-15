@@ -80,7 +80,7 @@ $(document).ready(function(){
     // Add a click event on each of the dots
     $dots.forEach(function ($el) {
       $el.addEventListener('click', function () {
-
+        resetTimer();
         // Get the slide number from id
         var target = $el.id;
 
@@ -92,13 +92,22 @@ $(document).ready(function(){
 
   var $next = document.getElementById("forward");
   $next.addEventListener('click', function() {
+    resetTimer();
     plusSlides(1);
   });
 
   var $prev = document.getElementById("backward");
   $prev.addEventListener('click', function() {
+    resetTimer();
     plusSlides(-1);
   });
+
+  function resetTimer() {
+    clearInterval(timer);
+    timer = setInterval(function() {
+      plusSlides(1);
+    }, 10000);
+  }
 
   function plusSlides(n) {
     showSlides(slideIndex += n);
@@ -124,7 +133,7 @@ $(document).ready(function(){
     dots[slideIndex-1].className += " active";
   }
   // Move forward a slide every 5 seconds
-  setInterval(function() {
+  var timer = setInterval(function() {
     plusSlides(1);
   }, 10000);
 });
