@@ -68,6 +68,7 @@ $(document).ready(function(){
 
 
   /* About me Carousel */
+
   // get all dots
   var $dots = Array.prototype.slice.call(document.querySelectorAll('.dot'), 0);
   // Show initial image
@@ -122,7 +123,13 @@ $(document).ready(function(){
     slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
   }
+  // Move forward a slide every 5 seconds
+  setInterval(function() {
+    plusSlides(1);
+  }, 10000);
 });
+
+
 /* Loading function */
 $(window).load(function() {
   // All images are loaded now.

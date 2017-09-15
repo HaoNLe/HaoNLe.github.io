@@ -72,11 +72,13 @@ body{
 
 }
 
-.img-about-me{
+.img-experience{
 	border-radius: 5%;
 	margin: auto;
 	display: block;
+	box-shadow: 0 2px 3px rgba(10,10,10,.1), 0 0 0 1px rgba(10,10,10,.1);
 }
+
 a.navbar-item:hover {
 	background-color: #72abc3;
 }
