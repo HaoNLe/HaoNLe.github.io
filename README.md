@@ -8,6 +8,8 @@ This is the source code for my personal website. I use Font Awesome's icons and 
 * Update landing scroll button to fade in a new shape
 * Add Project images where applicable
 * Add Project Demo/Code links where applicable
+* Change Carousel transition to slide left/right
+* Implement swipe/tap feature for carousel on mobile/tablet
 
 ## Authors
 
