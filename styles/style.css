@@ -166,6 +166,11 @@ a.navbar-item:hover {
 	border-radius: 5%;
 	min-width: 100px;
 	margin: .25rem;
+	width: 200px;
+}
+
+.is-short{
+	width: 100px;
 }
 
 .has-semi-transparent-bg{
