@@ -8,6 +8,12 @@ This is the source code for my personal website. I use Font Awesome's icons and 
 * Update landing scroll button to fade in a new shape
 * Add Project images where applicable
 * Add Project Demo/Code links where applicable
+* Add mailto link to my email
+* Get rid of role has retired
+* shorten heading contact me -> contact
+* change skills p on -> along
+* Test standardized width for skills items
+
 
 ## Authors
 
