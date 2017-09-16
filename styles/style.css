@@ -185,6 +185,9 @@ a.navbar-item:hover {
 	box-shadow: none;
 }
 
+.has-small-margin-top{
+	margin-top: 0.5rem;
+}
 /* CAROUSEL STYLE */
 
 .slideshow-container {
