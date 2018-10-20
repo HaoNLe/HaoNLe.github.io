@@ -10,7 +10,7 @@ body{
 }
 
 .has-text-centered {
-	text-align: center;
+	text-align: center !important;
 }
 
 .is-centered {
@@ -72,4 +72,28 @@ body{
 
 .landing-padding{
 	padding-top: 10vh;
+}
+
+.btn-margin {
+	margin: 0.5em !important;
+}
+
+strong{
+	font-weight:1000 !important;
+}
+
+/* panels */
+.project-panel{
+	transition: 0.25s !important;
+	transition-property: all;
+}
+
+.project-panel:hover {
+	opacity: 0.75;
+	transform: translateY(-10px) scale(1.05); 
+	-webkit-transform: translateY(-10px) scale(1.05);	
+}
+
+.extra-spacing{
+	min-height: 300px !important;
 }
