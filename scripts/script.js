@@ -3,7 +3,7 @@ $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.carousel').carousel();
   $('.modal').modal();
-          
+   
   /* Add smooth scrolling to all links */
   $("a").on('click', function(event) {
 
