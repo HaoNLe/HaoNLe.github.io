@@ -1,4 +1,8 @@
 $(document).ready(function(){ 
+  /*  */
+  $('.sidenav').sidenav();
+  
+  /*
   // Get all "navbar-burger" elements
   var $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
 
@@ -40,6 +44,7 @@ $(document).ready(function(){
             $target.classList.toggle('is-active');
         }
     });
+  */
 
   /* Add smooth scrolling to all links */
   $("a").on('click', function(event) {
@@ -63,8 +68,6 @@ $(document).ready(function(){
       });
     }
   });
-  
-
 
 
   /* About me Carousel */
