@@ -22,47 +22,88 @@
 	<div id="main-container">
     <!-- NAVIGATION BAR -->
     <div class="navbar-fixed">
-      <nav>
+      <nav class="white">
         <div class="nav-wrapper">
-          <a href="#Landing" class="brand-logo">Hao Le</a>
-          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-          <ul class="left hide-on-med-and-down">
-            <li>
-              <a href="https://github.com/HaoNLe" target="_blank">
-                <span class="icon" style="color: #333;">
-                  <i class="fa fa-lg fa-github"></i>
-                </span>
-              </a>
-              </li>
-              <li>
-              <a href="https://www.linkedin.com/in/hao-le/" target="_blank">
-                <span class="icon" style="color: #007bb6;">
-                  <i class="fa fa-lg fa-linkedin-square"></i>
-                </span>
-              </a>
-            </li>
-        </ul>
+          <a href="#landing" class="grey-text text-darken-3 brand-logo">Hao Le</a>
+          <a data-target="mobile-nav" class="sidenav-trigger"><i class="grey-text text-darken-3 fa fa-3x fa-bars"></i></a>
+            
           <ul class="right hide-on-med-and-down">
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Experience">Experience</a></li>
-            <li><a href="#Contacts">Contacts</a></li>
+            <li><a href="https://github.com/HaoNLe" target="_blank">
+              <i style="color: #333;" class="fa fa-lg fa-github"></i></span></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/hao-le/" target="_blank">
+              <i style="color: #007bb6;" class="fa fa-lg fa-linkedin-square"></i></a>
+            </li>
+            <li><a class="grey-text text-darken-3" href="#About">About</a></li>
+            <li><a class="grey-text text-darken-3" href="#Projects">Projects</a></li>
+            <li><a class="grey-text text-darken-3" href="#Experience">Experience</a></li>
+            <li><a class="grey-text text-darken-3" href="#Contacts">Contact</a></li>
           </ul>
         </div>
       </nav>
     </div>
 
-    <ul class="sidenav" id="mobile-demo">
-      <li><a href="#About">About</a></li>
-      <li><a href="#Skills">Skills</a></li>
-      <li><a href="#Projects">Projects</a></li>
-      <li><a href="#Experience">Experience</a></li>
-      <li><a href="#Contacts">Contacts</a></li>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#landing">Top</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/hao-le/">LinkedIn</a></li>
+      <li><a href="https://github.com/HaoNLe">Github</a></li>
     </ul>
-    
-	</div>
 
+  <!-- LANDING -->
+  <section class="is-fullheight landing-padding">
+    <a id="landing" style="top:-100px; position:relative;"></a>
+      <div class="container has-text-centered">
+        <img class="img-headshot" src="images/SkyDeckHeadshot.jpg" alt="headshot">
+        <h2 class="title ">Hao Le</h2>
+        <h4 class="title ">Software Engineer</h4>
+        <a class="waves-effect waves-light btn is-round normal-caps blue" href="#about" download="">
+          <strong>About Me</strong>
+          <span class="icon-margin">
+            <i class="fa fa-caret-down"></i>
+          </span>
+        </a>
+        
+      </div>
+    </div>
+  </section>
+  
+  <!-- ABOUT -->
+  <div class="container">
+    <a class="section-anchor" id="about"></a>
+    <div class="row">
+      <div class="col s12 m6">
+        <h4 class="title">I'm like hey what's up hello</h4>
+        <p class="flow-text"><strong>I'm a fourth year student at UC Berkeley</strong> studying computer science
+          and coffee intake management</p>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="carousel">
+          <a class="carousel-item" href="#one"><img src="images/Carouselimg1.jpg"></a>
+          <a class="carousel-item" href="#two"><img src="images/Carouselimg2.jpg"></a>
+          <a class="carousel-item" href="#three"><img src="images/Carouselimg3.jpg"></a>
+          <a class="carousel-item" href="#four"><img src="images/Carouselimg4.jpg"></a>
+          <a class="carousel-item" href="#five"><img src="images/Carouselimg5.jpg"></a>
+        </div>
+      </div>
+
+      <div class="col s12 m4 offset-m4">
+          <a class="waves-effect waves-light btn is-round normal-caps blue" href="files/Hao_Resume.pdf" download="">
+            <span><strong>Resume</strong></span>
+            <span class="icon-margin">
+              <i class="fa fa-download"></i>
+            </span>
+          </a>
+      </div>
+    </div>
+    
+  </div>
+
+</div>
 	<!-- SCRIPTS -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/materialize.min.js"></script>
