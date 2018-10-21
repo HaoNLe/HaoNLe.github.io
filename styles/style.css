@@ -26,13 +26,13 @@ body{
 }
 
 .is-fullheight {
-	height: 100vh
+	min-height: 100vh
 }
 
 .img-headshot {
 	border-radius: 50%;
-	max-width: 200px;
-	max-height: 200px;
+	max-width: 225px;
+	max-height: 225px;
 	margin: auto;
 	display: block;
 }
@@ -66,12 +66,13 @@ body{
 .section-anchor {
 	display: block;
 	position: relative;
-    top: -100px;
+    top: -15vh;
     visibility: hidden;
 }
 
-.landing-padding{
+.container-padding{
 	padding-top: 10vh;
+	padding-bottom: 10vh;
 }
 
 .btn-margin {
@@ -95,5 +96,10 @@ strong{
 }
 
 .extra-spacing{
-	min-height: 300px !important;
+	min-height: 320px !important;
+}
+
+.reverse-text{
+	direction: rtl;
+	unicode-bidi: bidi-override;
 }
