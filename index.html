@@ -2,472 +2,514 @@
 <head>
 	<!-- STYLE SHEETS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.5.2/css/bulma.min.css">
-	<link rel="stylesheet" type="text/css" href="styles/style.css" />
-	<link href="SkyDeckHeadshotIcon.png" rel="icon">
+  <link rel="stylesheet" type="text/css" href="styles/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <link href="SkyDeckHeadshotIcon.png" rel="icon">
 	<!-- VIEWPORT -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
 
 <body>
 	<!-- LOADING SCREEN -->
-	<div id="loader">
+  <div id="loader">
 		<span class="icon is-large">
 		  <i class="fa fa-3x fa-spin fa-cog"></i>
 		</span>
 	</div>
+
 	<!-- MAIN CONTENT -->
 	<div id="main-container">
-		<!-- NAVIGATION BAR -->
-		<nav id="nav"; class="navbar" style="position: fixed; top: 0; left: 0; right: 0; z-index:999999;">
-			<div class="navbar-brand">
-			    <a class="navbar-item" href="#Landing">
-			    <h1 style="font-family: Open Sans;">Hao Le</h1>
-			    </a>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar-fixed">
+      <nav class="white">
+        <div class="nav-wrapper">
+          <a href="#landing" class="grey-text text-darken-3 brand-logo">Hao Le</a>
+          <a data-target="mobile-nav" class="sidenav-trigger"><i class="grey-text text-darken-3 fa fa-3x fa-bars"></i></a>
+            
+          <ul class="right hide-on-med-and-down">
+            <li><a href="https://github.com/HaoNLe" target="_blank">
+              <i style="color: #333;" class="fa fa-lg fa-github"></i></a>
+            </li>
+            <li><a href="https://www.linkedin.com/in/hao-le/" target="_blank">
+              <i style="color: #007bb6;" class="fa fa-lg fa-linkedin-square"></i></a>
+            </li>
+            <li><a class="grey-text text-darken-3" href="#about">About</a></li>
+            <li><a class="grey-text text-darken-3" href="#projects">Projects</a></li>
+            <li><a class="grey-text text-darken-3" href="#experience">Experience</a></li>
+            <li><a class="grey-text text-darken-3" href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
-			    <a class="navbar-item" href="https://github.com/HaoNLe" target="_blank">
-			      <span class="icon" style="color: #333;">
-			        <i class="fa fa-lg fa-github"></i>
-			      </span>
-			    </a>
+    <ul class="sidenav" id="mobile-nav">
+      <li><a href="#landing">Top</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="https://www.linkedin.com/in/hao-le/" target="_blank">LinkedIn</a></li>
+      <li><a href="https://github.com/HaoNLe" target="_blank">GitHub</a></li>
+    </ul>
 
-			    <a class="navbar-item" href="https://www.linkedin.com/in/hao-le/" target="_blank">
-			      <span class="icon" style="color: #007bb6;">
-			        <i class="fa fa-lg fa-linkedin-square"></i>
-			      </span>
-			    </a>
+    <!-- LANDING -->
+    <a id="landing" class="section-anchor"></a>
+    <div class="is-fullheight valign-wrapper landing-padding" style="margin-top: -5vh;">
+      <div class="container has-text-centered">
+        <img class="img-headshot" src="images/SkyDeckHeadshot.jpg" alt="headshot">
+        <h2 class="title ">Hao Le</h2>
+        <h4 class="title ">Software Engineer</h4>
+        <a class="waves-effect waves-light btn is-round normal-caps blue" href="#about">
+          <strong>About Me</strong>
+          <span class="icon-margin">
+            <i class="fa fa-caret-down"></i>
+          </span>
+        </a>
+      </div>
+    </div>
+    
+    <!-- ABOUT -->
+    <div class="section container">
+      <a class="section-anchor" id="about"></a>
+      <div class="row">
+        <div class="col s12 m6">
+          <h4 class="title">I'm like Hey what's up Hello</h4>
+          <p class="flow-text"><strong>I'm a fourth year student at UC Berkeley</strong> studying computer science
+            and coffee intake management.<br><br>
+            On the technical side I have full stack experience in both startup and corporate workplaces. 
+            You can read more about this below. Let's code together.<br><br>
+            Outside of engineering my recent adventures include a two month solo trip through Europe.
+            Other pastimes of mine include dance, stories (be it through video games or books), and singing with my ukulele.
+            <br><br>Not playing the ukulele. Just holding it.
+            
+          </p>
+        </div>
 
-			    <div class="navbar-burger burger" data-target="navMenu">
-			      <span></span>
-			      <span></span>
-			      <span></span>
-			    </div>
-	  		</div>
+        <div class="col s12 m6 has-text-centered">
+          <div class="carousel">
+            <a class="carousel-item" href="#one"><img src="images/Carouselimg1.jpg"></a>
+            <a class="carousel-item" href="#two"><img src="images/Carouselimg2.jpg"></a>
+            <a class="carousel-item" href="#three"><img src="images/Carouselimg3.jpg"></a>
+            <a class="carousel-item" href="#four"><img src="images/Carouselimg4.jpg"></a>
+            <a class="carousel-item" href="#five"><img src="images/Carouselimg5.jpg"></a>
+            <a class="carousel-item" href="#six"><img src="images/Carouselimg6.jpg"></a>
+          </div>
+          <a class="waves-effect waves-light btn is-round normal-caps grey darken-3 btn-margin" href="https://www.linkedin.com/in/hao-le/">
+            <span><strong>LinkedIn</strong></span>
+            <span class="icon-margin">
+              <i class="fa fa-linkedin-square"></i>
+            </span>
+          </a>
+          <a class="waves-effect waves-light btn is-round normal-caps blue btn-margin" href="files/Hao_Resume.pdf" download="">
+            <span><strong>Resume</strong></span>
+            <span class="icon-margin">
+              <i class="fa fa-download"></i>
+            </span>
+          </a>
+          <a class="waves-effect waves-light btn is-round normal-caps grey darken-3 btn-margin" href="https://github.com/HaoNLe">
+            <span><strong>GitHub</strong></span>
+            <span class="icon-margin">
+              <i class="fa fa-github"></i>
+            </span>
+          </a>
+        </div>  
+      </div>
+    </div>
 
-	  		<div id="navMenu" class="navbar-menu">
-	  			<div class="navbar-end" style="font-family: Open Sans;">
-	  				<a class="navbar-item " href="#About">
-				    	About
-				    </a>
+    <!-- PROJECTS -->
+    <div class="grey lighten-4">
+    <div class="container container-padding">
+      <a class="section-anchor" id="projects"></a>
+      <div class="row has-text-centered">
 
-				    <a class="navbar-item " href="#Skills">
-				    	Skills
-				    </a>
+        <div class="col s12 m6 l4 offset-l2 extra-spacing">
+          <a class="modal-trigger" href="#modal1">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/tone-analyzer-alexa.png">
+              </div>
+            </div>
+          </a>
+          <h5>Alexa Tone Analyzer</h5>
+          <h6>Full Stack</h6>
+        </div>
+        
+        <div class="col s12 m6 l4 extra-spacing">
+          <a class="modal-trigger" href="#modal2">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/wheretoeat.jpg">
+              </div>
+            </div>
+          </a>
+          <h5>CalHacks 4.0 WhereToEat</h5>
+          <h6>Back End</h6>
+        </div>
 
-				    <a class="navbar-item " href="#Projects">
-				    	Projects
-				    </a>
+        <div class="col s12 m6 l4 offset-l2 extra-spacing">
+          <a class="modal-trigger" href="#modal3">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/clock.png">
+              </div>
+            </div>
+          </a>
+          <h5>Facebook Time Chrome Extension</h5>
+          <h6>Front End</h6>
+        </div>
 
-				    <a class="navbar-item " href="#Experience">
-				    	Experience
-				    </a>
+        <div class="col s12 m6 l4 extra-spacing">
+          <a class="modal-trigger" href="#modal4">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/codeology.png">
+              </div>
+            </div>
+          </a>
+          <h5>Codeology</h5>
+          <h6>Full Stack</h6>
+        </div>
+        
+        <!--
+        <div class="col s12 m6 l4 extra-spacing">
+          <a class="modal-trigger" href="#modal5">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/tone-analyzer-alexa.jpg">
+              </div>
+            </div>
+          </a>
+          <h5>Alexa Tone Analyzer</h5>
+        </div>
 
-				    <a class="navbar-item " href="#Contact">
-				    	Contact
-				    </a>
-	  			</div>
-	  		</div>
-	  	</nav>
-		<!-- LANDING -->
-		<section id="landing"; class="hero is-fullheight" style="background-image: url(images/12apostles.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
-			<a id="Landing"></a>
-			<div class="hero-body">
-				<div class= "container">
-					<img class="img-headshot" src="images/SkyDeckHeadshot.jpg" alt="headshot">
-					<h1 class="title is-1 has-text-centered landing-title is-white">Hao Le</h1>
-					<h2 class="subtitle has-text-centered is-white" style="margin-bottom: 1rem;">Software Engineer</h2>
-					<a class="button button-fade" href="files/Hao_Resume.pdf" download>
-						<span><strong>Resume</strong></span>
-						<span class="icon is-small scroll-icon">
-		  					<i class="fa fa-arrow-down"></i>
-						</span>
-					</a>
-				</div>
-			</div>
-			<div class= "hero-foot is-hidden-mobile">
-				<div class= "container landing-footer is-desktop-only">
-					<a class= "button scroll-down-button" href="#About">
-						<span class="icon is-medium">
-		  					<i class="fa fa-chevron-down fa-2x"></i>
-						</span>
-						<span>LEARN MORE</span>
-						<span class="icon is-medium">
-		  					<i class="fa fa-chevron-down fa-2x"></i>
-						</span>
-					</a>
-				</div>
-			</div>
-		</section>
+        <div class="col s12 m6 l4 extra-spacing">
+          <a class="modal-trigger" href="#modal6">
+            <div class="card hoverable project-panel">
+              <div class="card-image">
+                <img src="images/tone-analyzer-alexa.jpg">
+              </div>
+            </div>
+          </a>
+          <h5>Alexa Tone Analyzer</h5>
+        </div>
+      </div> 
+      -->
+    </div>
+    </div>
+    
+      
+    <!-- PROJECT MODALS -->
+    <div>
+      <div id="modal1" class="modal">
+        <div class="modal-content container">
+          <h4 class="has-text-centered">Alexa Tone Analyzer</h4>
+          <p class="flow-text">Alexa Tone Analyzer is an Alexa Skill that allows the user to orally journal. 
+            The user dictates a journal "entry" to Alexa who then calls on IBM Watson to 
+            obtain a tonal analysis. The user's entry and tonal analysis is stored on 
+            Amazon's DynamoDB along with metadata.</p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">AWS</div>
+          <div class="chip">IBM Watson</div>
+          <div class="chip">Python</div>
+          <div class="chip">DynamoDB</div>
+        </div>
+      </div>
 
-		<!-- ABOUT -->
-		<section id="about"; class="section" style="background-color: #F2F2F2;">
-			<a id="About" class="section-anchor"></a>
-			<div class="container has-text-dark">
-				<div class="columns is-8">
-					<div class="column is-7" style="text-align:left;">
-						<h2 class="title is-2 has-text-centered">I'm like "Hey, what's up? Hello"</h2>
-			      		<span class="list-divider"></span>
-					    <p style="font-size: 1.15rem;"><strong style="font-size:1.25rem;">I'm a fourth year student at University of California, Berkeley</strong> in the Bay Area studying computer science and coffee intake management. I have full-stack experience designing and developing software from webapp UI to Exchange integrations. When I'm not at a machine coding I'm either dancing, bothering my little brother, or figuring out the next productivity hack.</p>
-					    <h3 class="subtitle is-3 has-text-centered" style="padding-top: 1.5rem; margin-bottom:0rem;">Interests and Hobbies</h3>
-						    <div class="column flex-container is-hidden-tablet" style="justify-content: space-around;">
-						    	<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-cutlery"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-coffee"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-child"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-music"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-plane"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-camera-retro"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-gamepad"></i>
-			      				</span>
-			      				<span class="icon is-large icon-margin">
-			        					<i class="fa fa-border fa-2x fa-comments-o"></i>
-			      				</span>
-						   	</div>
-						    <div class="column flex-container is-hidden-mobile" style="justify-content: space-around;">
-						    	<div class="box has-text-centered icon-box">
-					    			<span class="icon is-large centered-in-box">
-			        					<i class="fa fa-3x fa-cutlery"></i>
-			      					</span>
-			      					<h4 class="subtitle is-6">
-			      						Cooking
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-coffee"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Coffee
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-child"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Dance
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-music"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Jamming
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-plane"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Travel
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-camera-retro"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Photography
-									</h4>
-			      				</div>
-						    	<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-gamepad"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Gaming
-									</h4>
-			      				</div>
-			      				<div class="box has-text-centered icon-box">
-						    		<span class="icon is-large centered-in-box">
-				        				<i class="fa fa-3x fa-comments-o"></i>
-				      				</span>
-				      				<h4 class="subtitle is-6">
-			      						Networking
-									</h4>
-			      				</div>
-							</div>
-						</div>
-					<div class="column is-5">
-						<!-- <img class="img-about-me" src="images/Headshot.jpg" alt="headshot"> -->
-						<div class="slideshow-container">
-						  <div class="mySlides fade">
-						    <div class="numbertext">1 / 5</div>
-						    <img class="slide-img" src="images/Carouselimg1.jpg">
-						  </div>
+      <div id="modal2" class="modal">
+        <div class="modal-content container">
+          <h4 class="has-text-centered">CalHacks 4.0 WhereToEat</h4>
+          <p class="flow-text">At one of the largest hackathons in the world, my team and I built 
+            a web app that suggests restaurants to the user based on their preferences. We used 
+            Microsoft's computer vision custom AI to classify images of preferred food and the labels were 
+            used in developing a statistical model.
+            <br><br>
+            The machine would then use this for suggesting a new 
+            restaurant to the user based on that restaurant's food images.</p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">Microsoft Computer Vision Custom AI</div>
+          <div class="chip">nodeJS</div>
+          <div class="chip">Express</div>
+          <div class="chip">MongoDB</div>
+        </div>
+      </div> 
 
-						  <div class="mySlides fade">
-						    <div class="numbertext">2 / 5</div>
-						    <img class="slide-img" src="images/Carouselimg2.jpg">
-						  </div>
+      <div id="modal3" class="modal">
+        <div class="modal-content container">
+          <h4 class="has-text-centered">Facebook Time Chrome Extension</h4>
+          <p class="flow-text">I built a chrome extension that utilizes DOM 
+            scraping to get info on the profiles users visit while checking user activity and 
+            stores time data into Chrome's "storage". 
+            <br><br>The user can access their data 
+            visualized per profile via the extension's UI page. The most difficult issue was 
+            figuring out which event handlers I wanted to use to check when users were actually 
+            looking at the facebook tab.</p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">JavaScript</div>
+          <div class="chip">Storage API</div>
+          <div class="chip">Google Chrome</div>
+          <div class="chip">HTML</div>
+        </div>
+      </div>
+      
+      <div id="modal4" class="modal">
+        <div class="modal-content container">
+          <h4 class="has-text-centered">Codeology</h4>
+          <p class="flow-text">Codeology is a club I'm involved with on campus. I revamped their website with a 
+            responsive layout and deployed a web application that allows club members to 
+            create user profiles and schedule practice technical interviews with each other 
+            and alumni. <br><br>
+            Features include automated emailing, a fully functional user system, and a peer interview feedback system.
+          </p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">Ruby on Rails</div>
+          <div class="chip">REST</div>
+          <div class="chip">HTML</div>
+          <div class="chip">JavaScript</div>
+        </div>
+      </div>   
+      <!--
+      <div id="modal5" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p class="flow-text">A bunch of text</p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">AWS</div>
+          <div class="chip">IBM Watson</div>
+          <div class="chip">Python</div>
+          <div class="chip">DynamoDB</div>
+        </div>
+      </div>
+      
+      <div id="modal6" class="modal">
+        <div class="modal-content">
+          <h4>Modal Header</h4>
+          <p class="flow-text">A bunch of text</p>
+        </div>
+        <div class="modal-footer has-text-centered">
+          <div class="chip">AWS</div>
+          <div class="chip">IBM Watson</div>
+          <div class="chip">Python</div>
+          <div class="chip">DynamoDB</div>
+        </div>
+      </div>  
+      -->
+    </div>
+  </div>
 
-						  <div class="mySlides fade">
-						    <div class="numbertext">3 / 5</div>
-						    <img class="slide-img" src="images/Carouselimg3.jpg">
-						  </div>
+  <!-- EXPERIENCE -->
+  <div class="container container-padding">
+    <a class="section-anchor" id="experience"></a>
+    <div class="row has-text-centered">
 
-						   <div class="mySlides fade">
-						    <div class="numbertext">4 / 5</div>
-						    <img class="slide-img" src="images/Carouselimg4.jpg">
-						  </div>
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal1">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/InnoWorks.jpg">
+            </div>
+          </div>
+        </a>
+        <h5>InnoWorks</h5>
+        <h6>Summer 2015 - Summer 2016</h6>
+      </div>
+      
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal2">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/CSM.jpg">
+            </div>
+          </div>
+        </a>
+        <h5>CS61b and CSM</h5>
+        <h6>Fall 2016 - Spring 2017</h6>
+      </div>
 
-						  <div class="mySlides fade">
-						    <div class="numbertext">5 / 5</div>
-						    <img class="slide-img" src="images/Carouselimg5.jpg">
-						  </div>
-						  
-						</div>
-						<br>
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal3">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/movement.jpg">
+            </div>
+          </div>
+        </a>
+        <h5>[M]ovement Dance</h5>
+        <h6>Spring 2017</h6>
+      </div>
 
-						<div style="text-align:center">
-							<a id="backward" class="prev">&#10094;</a>
-							<span id="1" class="dot" ></span> 
-							<span id="2" class="dot" ></span> 
-							<span id="3" class="dot" ></span> 
-							<span id="4" class="dot" ></span> 
-							<span id="5" class="dot" ></span> 
-							<a id="forward" class="next">&#10095;</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-- SKILLS --> 
-		<section id="skills"; class="section" style="min-height: 100vh; background-color: #D1FAFF;">
-			<a id="Skills" class="section-anchor"></a>
-			<div class="container">
-				<h2 class="title is-1">Skills</h2>
-				<div class="columns" style="margin:0px 0px 3rem;">
-					<div class="column is-10 is-offset-1 has-text-left">
-						<p class="is-size-3 is-size-4-tablet is-size-5-mobile">
-							As a result of switching my major halfway through college I've had to hit the ground running. You can view the laundry list of languages, tools, and knowledge I've picked up along the way (except for sleep and profanity; I picked those up a while back)
-						</p>
-					</div>
-				</div>
-				<div class="columns is-size-3 is-size-4-tablet is-size-5-mobile">
-					<div class="column">
-						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-4x fa-code"></i>
-			      		</span>
-			      		<span class="list-divider"></span>
-						<div id="languages" class="columns has-text-centered">				      		
-					      	<div class="column flex-container">
-				      			<div class="item">Java</div>
-				      			<div class="item">C</div>
-				      			<div class="item">TypeScript</div>
-				      			<div class="item">Python</div>
-				      			<div class="item">C#</div>
-				      			<div class="item">HTML</div>
-				      			<div class="item">JavaScript</div>
-				      			<div class="item">CSS</div>
-				      			<div class="item">Profanity</div>
-					      	</div>
-					    </div>
-			      		<span class="list-divider-bottom"></span>
-					</div>
-					
-					<div class="column">
-						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-4x fa-wrench"></i>
-			      		</span>
-			      		<span class="list-divider"></span>
-						<div id="tools" class="columns has-text-centered">				      		
-					      	<div class="column flex-container">
-				      			<div class="item">Git</div>
-				      			<div class="item">NodeJS</div>
-				      			<div class="item">GruntJS</div>
-				      			<div class="item">SourceTree</div>
-				      			<div class="item">Photoshop</div>
-				      			<div class="item">IntelliJ</div>
-				      			<div class="item">Express</div>
-				      			<div class="item">MongoDB</div>
-				      			<div class="item">VScode/VS</div>
-				      			<div class="item">Coffee</div>
-				      			<div class="item">Sleep</div>
-					      	</div>
-					    </div>
-			      		<span class="list-divider-bottom"></span>
-					</div>
-					
-					<div class="column">
-						<span class="icon" style="color: #3c3c3c">
-			        		<i class="fa fa-4x fa-book"></i>
-			      		</span>
-			      		<span class="list-divider"></span>
-			      		<div id="knowledge" class="columns has-text-centered">				      		
-					      	<div class="column flex-container">
-				      			<div class="item">Intro AI</div>
-				      			<div class="item">OS</div>
-				      			<div class="item">UI Des/Dev</div>
-				      			<div class="item">Algorithms</div>
-				      			<div class="item">Data Structures</div>
-				      			<div class="item">Linear Algebra</div>
-				      			<div class="item">Discrete Math</div>
-				      			<div class="item">Probability</div>
-				      			<div class="item">Gitflow Workflow</div>
-				      			<div class="item">Trunk Development</div>
-				      			<div class="item">Machine Architecture</div>
-					      	</div>
-					    </div>
-			      		<span class="list-divider-bottom"></span>
-					</div>
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal4">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/PING.png">
+            </div>
+          </div>
+        </a>
+        <h5>PING</h5>
+        <h6>Summer 2017</h6>
+      </div>
+      
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal5">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/PING.png">
+            </div>
+          </div>
+        </a>
+        <h5>PING Round 2</h5>
+        <h6>Spring 2018</h6>
+      </div>
 
-				</div>
-			</div>
-		</section>
-		
-		<!-- PROJECTS -->
-		<section id="projects"; class="section is-white" style="background-color: #363636;">
-			<a id="Projects" class="section-anchor"></a>
-			<div class="container">
-				<h2 class="title is-1 is-white">Projects</h2>
-				<div class="columns">
-				  <div class="column has-text-left has-text-white is-size-4 is-size-5-tablet is-size-6-mobile">
-				  	<div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">CalHacks 4.0: WhereToEat</h1>
-				  		<p>At one of the largest hackathons in the world, my team and I built a machine learning web app that suggests restaurants to the user based on their preferences. We used Microsoft's computer vision custom AI to classify pictures of food and the labels were used in developing an ML model (with synaptic, a javascript ML library) for the user. The machine would then use images of restaurants' foods and suggest the restaurant with the highest score according to the user's ML model. </p>
-				  		<div class="tags has-small-margin-top">
-			  				<span class="tag is-medium is-dark">Hackathon</span>
-			  				<span class="tag is-medium is-dark">Teamwork</span>
-			  				<span class="tag is-medium is-dark">HYPE</span>
-			  				<span class="tag is-medium is-dark">Microsoft Computer Vision Custom AI</span>
-			  				<span class="tag is-medium is-dark">Synaptic</span>
-			  				<span class="tag is-medium is-dark">nodeJS</span>
-			  				<span class="tag is-medium is-dark">MongoDB</span>
-			  				<span class="tag is-medium is-dark">Express</span>
-				  		</div>
-				  	</div>
-				  	<div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">Website</h1>
-				  		<p>Out of desire to practice front-end web development I decided to create a personal website for myself. I started out with styling some CSS from scratch to learn the basics and then switched to bulma for its focus on responsive design. Proud to say that I finished this in about 3-4 workdays. Code can be found on my github.</p>
-				  		<div class="tags has-small-margin-top">
-				  			<span class="tag is-medium is-dark">HTML</span>
-				  			<span class="tag is-medium is-dark">jQuery</span>
-				  			<span class="tag is-medium is-dark">CSS</span>
-				  			<span class="tag is-medium is-dark">Bulma</span>
-				  			<span class="tag is-medium is-dark">JavaScript</span>
-				  		</div>
-				  	</div>
-				  	<div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">Recipe Assistant</h1>
-				  		<p>Recipe Assistant is a web app that aids the user in following and maintaining recipes. This was a group project for the User Interface Design and Development course at UC Berkeley. I coded the front-end with HTML and jQuery to practice my design fundamentals, while one of my partners handled setting up the DynamoDB.</p>
-				  		<div class="tags has-small-margin-top">
-				  			<span class="tag is-medium is-dark">HTML</span>
-				  			<span class="tag is-medium is-dark">jQuery</span>
-				  			<span class="tag is-medium is-dark">AWS</span>
-				  			<span class="tag is-medium is-dark">Bootstrap</span>
-				  			<span class="tag is-medium is-dark">JavaScript</span>
-				  		</div>
-				  	</div>
-				  </div>
-				  <div class="column has-text-left has-text-white is-size-4 is-size-5-tablet is-size-6-mobile">
-				    <div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">PING Exchange Integration</h1>
-				  		<p>This web app was a way for users to track their email and calendar time and it was my longest and largest project so far. I finished an MVP for this project twice: once for ASP.NET and once for MEAN (minus Angular). This project also taught me the most: I learned multiple technologies and multiple integrations between different entities. There are too many details as to specifics of what I've learned to write here but I am willing to talk about it.</p>
-				  		<div class="tags has-small-margin-top">
-				  			<span class="tag is-medium is-dark">ASP.NET</span>
-				  			<span class="tag is-medium is-dark">nodeJS</span>
-				  			<span class="tag is-medium is-dark">MongoDB</span>
-				  			<span class="tag is-medium is-dark">HTML</span>
-				  			<span class="tag is-medium is-dark">JavaScript</span>
-				  			<span class="tag is-medium is-dark">TypeScript</span>
-				  			<span class="tag is-medium is-dark">Express</span>
-				  			<span class="tag is-medium is-dark">Grunt</span>
-				  			<span class="tag is-medium is-dark">Exchange</span>
-				  			<span class="tag is-medium is-dark">Azure</span>
-				  			<span class="tag is-medium is-dark">XML</span>
-				  		</div>
-				  	</div>
-				  	<div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">Alexa Tone Analyzer</h1>
-				  		<p>Alexa Tone Analyzer is an Alexa Skill that is based off of journaling. The user dictates a journal "entry" to Alexa who then calls on IBM Watson to obtain a tonal analysis. The user's entry and tonal analysis along with some metadata is stored on Amazon's DynamoDB.</p>
-				  		<div class="tags has-small-margin-top">
-				  			<span class="tag is-medium is-dark">Python</span>
-				  			<span class="tag is-medium is-dark">AWS</span>
-				  			<span class="tag is-medium is-dark">DynamoDB</span>
-				  			<span class="tag is-medium is-dark">IBM Watson API</span>
-				  		</div>
-				  	</div>
-				  	<div class ="box bg-transparent has-no-shadow has-text-white">
-				  		<h1 class="subtitle is-theme-color is-size-3 is-size-4-tablet is-size-5-mobile">Facebook Time Chrome Extension</h1>
-				  		<p>This is exactly what it sounds like. The chrome extension I built utilizes DOM scraping to get info on the profiles users visit while checking user activity and stores time data into Chrome's "storage". The user can access their data visualized per profile via the extension's UI page. The most difficult issue was figuring out which event handlers I wanted to use to check when users were actually looking at the facebook tab.</p>
-				  		<div class="tags has-small-margin-top">
-				  			<span class="tag is-medium is-dark">JavaScript</span>
-				  			<span class="tag is-medium is-dark">Storage API</span>
-				  			<span class="tag is-medium is-dark">Chrome Development</span>
-				  			<span class="tag is-medium is-dark">HTML</span>
-				  			<span class="tag is-medium is-dark">Bootstrap</span>
-				  			<span class="tag is-medium is-dark">jQuery</span>
-				  		</div>
-				  	</div>
-				  </div>
-				</div>
-			</div>
-		</section>
-		
-		<!-- EXPERIENCE -->
-		<section id="experience"; class="section" style="background-image: url(images/myphoto.jpg); background-size: cover; background-repeat: no-repeat; background-position: bottom;">
-			<a id="Experience" class="section-anchor"></a>
-			<div class="container">
-				<h2 class="title is-1 is-white">Experience</h2>
-				<div class="columns">
-					<div class="column is-4">
-						<img class="img-experience" src="images/Ping.jpg">
-					</div>
-					<div class="column is-8 has-text-left has-text-white is-size-4 is-size-5-tablet is-size-6-mobile">
-						<div class="box has-semi-transparent-bg has-text-white">
-							<h3 class="subtitle is-white is-size-3 is-size-4-tablet is-size-5-mobile">P.I.N.G Inc. | Software Engineer | Jun '17 - Sep '17</h3>
-							<p>My Summer was spent working with two motivated and talented Engineers; I was entrusted with an integration with Exchange Servers. Built from complete scratch, the undertaking helped me learn how to research, design, and implement software from the ground up while keeping in mind scalability, efficiency, and security. I even ported my project to another language/framework after incompatibilities were unearthed. A gruelsome, yet fulfilling and worthwhile experience.</p>
-						</div>
-					</div>
-				</div>
-				<div class="columns">
-					<div class="column is-4">
-						<img class="img-experience"src="images/CSM.jpg">
-					</div>
-					<div class="column is-8 has-text-left has-text-white is-size-4 is-size-5-tablet is-size-6-mobile">
-							<div class="box has-semi-transparent-bg has-text-white">
-								<h3 class="subtitle is-white is-size-3 is-size-4-tablet is-size-5-mobile">CS61B/CSM | Lab Assistant/Mentor | Aug '16 - May '17</h3>
-								<p>Ah, the class that changed my life and ultimately motivated me to drop pre-med for a pursuit in Computer Science halfway through college. I loved the class so much that I decided to mentor students as a part of Computer Science Mentors (on-campus club) and lab assist for the course for the next year.</p>
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		
-		<!-- CONTACT -->
-		<section id="contact"; class="section" style="background-color: #2a2a2a;">
-			<a id="Contact" class="section-anchor"></a>
-			<div class="container">
-				<h2 class="title is-3 is-white has-text-centered">Contact</h2>
-				<span class="list-divider-bottom"></span>
-				<div class="columns">
-					<div class="column is-half is-offset-one-quarter">
-						<h5 class="subtitle is-size-3 is-size-4-tablet is-size-5-mobile is-white">Connect with me!</h5>
-						<p class="is-white is-size-3 is-size-4-tablet is-size-5-mobile">Don't hesitate to shoot me an email (in résumé). I love discussing ideas and exploring opportunities!</p>
-					</div>
-				</div>
-			</div>
-		</section>
-	</div>
+      <div class="col s12 m6 l4 extra-spacing">
+        <a class="modal-trigger" href="#expmodal6">
+          <div class="card hoverable project-panel">
+            <div class="card-image">
+              <img src="images/amazon-logo.jpg">
+            </div>
+          </div>
+        </a>
+        <h5>Amazon</h5>
+        <h6>Summer 2018</h6>
+      </div>
 
-	<!-- SCRIPTS -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="scripts/script.js"></script>
+    </div> 
+  </div>
+  
+    
+  <!-- Experience MODALS -->
+  <div>
+    <div id="expmodal1" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">InnoWorks</h4>
+        <h6 class="has-text-centered">President</h6>
+        <p class="flow-text">Innoworks is a club on campus that hosts a 5 day science workshop for 
+        local underprivileged middle school students. As president I directed my team in recruiting,
+        curriculum building, and resource acquisition. It was a challenging, yet rewarding experience and I was
+        lucky to have great officers working with me.</p>
+      </div>
+      <div class="modal-footer has-text-centered">
+      </div>
+    </div>
+
+    <div id="expmodal2" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">CS61b and CSM</h4>
+        <h6 class="has-text-centered">Lab Assistant and Mentor</h6>
+        <p class="flow-text">Ah, the class that changed my career and ultimately motivated me to drop 
+          pre-med for a pursuit in Computer Science halfway through college. I loved the class so much 
+          that I decided to mentor students as a part of Computer Science Mentors (on-campus club) and 
+          dedicate myself as a lab assistant.
+          </p>
+      </div>
+      <div class="modal-footer has-text-centered">
+      </div>
+    </div> 
+
+    <div id="expmodal3" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">[M]ovement Dance</h4>
+        <h6 class="has-text-centered">Team Director</h6>
+        <p class="flow-text">After wanting to dance since 10th grade, I finally took the leap and started 
+          dancing in College. Eventually, I led my own team with two friends and performed for Movement's 
+          and Berkeley Dance Community's showcase.</p>
+      </div>
+      <div class="modal-footer has-text-centered">
+      </div>
+    </div>
+    
+    <div id="expmodal4" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">Ping</h4>
+        <h6 class="has-text-centered">Software Engineer Intern</h6>
+        <p class="flow-text">At PING, I implemented a scalable web server app that integrates with Exchange
+          email servers. I tesearched test server options such as AWS, rackspace, and Azure, settling on 
+          Azure for Exchange compatibility. Eventually I ported the project from .NET to nodeJS due to 
+          package incompatibilities.
+        </p>
+      </div>
+      <div class="modal-footer has-text-centered">
+        <div class="chip">NodeJS</div>
+        <div class="chip">Express</div>
+        <div class="chip">Exchange</div>
+        <div class="chip">JavaScript</div>
+      </div>
+    </div>   
+
+    <div id="expmodal5" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">PING Round 2</h4>
+        <h6 class="has-text-centered">Software Engineer </h6>
+        <p class="flow-text">I took a break semester to travel. With the free time prior to my trip, 
+          I decided to work with PING again. Over two months I built an outlook integration to securely
+          track user time while integrating seamlessly with PING's back end.</p>
+      </div>
+      <div class="modal-footer has-text-centered">
+        <div class="chip">Outlook</div>
+        <div class="chip">Data</div>
+        <div class="chip">NodeJS</div>
+        <div class="chip">API integration</div>
+      </div>
+    </div>
+    
+    <div id="expmodal6" class="modal">
+      <div class="modal-content container">
+        <h4 class="has-text-centered">Amazon</h4>
+        <h6 class="has-text-centered">Software Engineer Intern</h6>
+        <p class="flow-text">At Amazon I created a module that processed data for over 500k active monthly users. 
+          The design process was quite a challenge and involved a number of tradeoff analyses. It took me a 2nd 
+          try for my proposal to be accepted.</p>
+      </div>
+      <div class="modal-footer has-text-centered">
+        <div class="chip">Bean</div>
+        <div class="chip">Big Data</div>
+        <div class="chip">SLA</div>
+        <div class="chip">Java</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- END MAIN CONTAINER-->
+  </div>
+
+
 </body>
+
+<!-- FOOTER -->
+<footer class="page-footer grey darken-1">
+  <div class="container">
+    <a class="section-anchor" id="contact"></a>
+    <div class="row">
+      <div class="col l6 s12">
+        <h5 class="white-text">Started from the top now we here</h5>
+        <p class="white-text">Thank you for making it this far. <br>Let's grab coffee, build solutions, and be smart together.</p>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <h5 class="white-text">Links</h5>
+        <ul>
+          <li><a class="white-text" href="https://www.linkedin.com/in/hao-le/" target="_blank">LinkedIn</a></li>
+          <li><a class="white-text" href="https://www.github.com/HaoNLe" target="_blank">GitHub</a></li>
+          <li><a class="white-text" href="#landing">Top</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-copyright grey darken-2">
+    <div class="container has-text-centered">
+    <p class="grey-text text-lighten-5">My email is: <strong><span class="reverse-text">ude.yelekreb@eloah</span></strong></p>
+    </div>
+  </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/materialize.min.js"></script>
+<script type="text/javascript" src="scripts/script.js"></script>
+
 </html>
