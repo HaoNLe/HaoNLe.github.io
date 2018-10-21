@@ -1,5 +1,5 @@
 $(document).ready(function(){ 
-  /*  */
+  /* Initialize materialize components */
   $('.sidenav').sidenav();
   $('.carousel').carousel();
   $('.modal').modal();
