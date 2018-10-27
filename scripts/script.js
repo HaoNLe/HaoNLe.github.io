@@ -3,7 +3,11 @@ $(document).ready(function(){
   $('.sidenav').sidenav();
   $('.carousel').carousel();
   $('.modal').modal();
-   
+  
+  $('#pulse-about-me').on("click", function(){
+    $('#pulse-about-me').removeClass("pulse");
+  });
+
   /* Add smooth scrolling to all links */
   $("a").on('click', function(event) {
 
