@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <link href="SkyDeckHeadshotIcon.png" rel="icon">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
 	<!-- VIEWPORT -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 </head>
@@ -46,11 +47,9 @@
     </div>
 
     <ul class="sidenav" id="mobile-nav">
-      <li><a href="#landing">Top</a></li>
-      <li><a href="#about">About</a></li>
+      <!-- <li><a href="#landing">Top</a></li>
+      <li><a href="#about">About</a></li> -->
       <!-- <li><a href="#projects">Projects</a></li> -->
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#contact">Contact</a></li>
       <!--<li><a href="/blog.html">Blog</a></li>-->
       <li><a href="https://www.linkedin.com/in/hao-le/" target="_blank">LinkedIn</a></li>
       <li><a href="https://github.com/HaoNLe" target="_blank">GitHub</a></li>
@@ -61,241 +60,26 @@
     <!-- LANDING -->
     <a id="landing" class="section-anchor"></a>
     <div class="is-fullheight valign-wrapper landing-padding" style="margin-top: -5vh;">
-      <div class="container has-text-centered">
-        <img class="img-headshot" src="images/SkyDeckHeadshot.jpg" alt="headshot">
-        <h2 class="title ">Hao Le</h2>
-        <h4 class="title ">Software Engineer</h4>
-        <a id="pulse-about-me" class="waves-effect waves-light btn is-round normal-caps" style="background-color:rgb(10,26,187)" href="#about">
-          <strong>About Me</strong>
-          <span class="icon-margin">
-            <i class="fa fa-caret-down"></i>
-          </span>
-        </a>
-      </div>
-    </div>
-    
-    <!-- ABOUT -->
-    <div class="section container">
-      <a class="section-anchor" id="about"></a>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <h4 class="title">I'm like Hey what's up Hello</h4>
-          <p class="flow-text">I'm a Full-Stack Software Engineer at 
-            <a style="color: rgb(10, 26, 187);" href="https://www.timebyping.com">TimeByPing Inc.</a>
-            <br><br>
-            I like building stuff.
-            I like a lot of other stuff too like singing with my ukulele.
-            <br>Not playing the ukulele. Just holding it.
-            
-          </p>
-        </div>
-      </div>	
-    </div>
-
-  <!-- EXPERIENCE -->
-  <div class="container container-padding">
-    <a class="section-anchor" id="experience"></a>
-    <div class="row has-text-centered">
-
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal1">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/InnoWorks.jpg">
-            </div>
+        <div class="row has-text-centered">
+          <div class="col s12 m12 l5">
+            <img class="img-headshot" src="images/SkyDeckHeadshot.jpg" alt="headshot">
+            <h4 class="title ">Software Engineer</h4>
           </div>
-        </a>
-        <h5>InnoWorks</h5>
-        <h6>Summer 2015 - Summer 2016</h6>
-      </div>
-      
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal2">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/CSM.jpg">
-            </div>
+          <div class="col s12 m9 offset-m2 l6 offset-l1">
+            <h4 class="title has-text-left-aligned">I'm like Hey what's up Hello</h4>
+            <p class="flow-text has-text-left-aligned">I'm a Full-Stack Software Engineer at 
+              <a style="color: rgb(10, 26, 187);" href="https://www.timebyping.com">TimeByPing Inc.</a>
+              <br><br>
+              I enjoy building things.
+              <br>
+              I also enjoy peaceful nights, cracking jokes, and singing with my ukulele.
+              <br>
+              Not playing the ukulele. Just holding it.
+            </p>
           </div>
-        </a>
-        <h5>CS61b and CSM</h5>
-        <h6>Fall 2016 - Spring 2017</h6>
-      </div>
-
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal3">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/movement.jpg">
-            </div>
-          </div>
-        </a>
-        <h5>[M]ovement Dance</h5>
-        <h6>Spring 2017</h6>
-      </div>
-
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal4">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/TimeByPing.png">
-            </div>
-          </div>
-        </a>
-        <h5>Time By Ping</h5>
-        <h6>Summer 2017</h6>
-      </div>
-      
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal5">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/TimeByPing.png">
-            </div>
-          </div>
-        </a>
-        <h5>Time By Ping Round 2</h5>
-        <h6>Spring 2018</h6>
-      </div>
-
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal6">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/amazon-logo.jpg">
-            </div>
-          </div>
-        </a>
-        <h5>Amazon</h5>
-        <h6>Summer 2018</h6>
-      </div>
-
-      <div class="col s12 m6 l4 extra-spacing">
-        <a class="modal-trigger" href="#expmodal7">
-          <div class="card hoverable project-panel">
-            <div class="card-image">
-              <img src="images/TimeByPing.png">
-            </div>
-          </div>
-        </a>
-        <h5>Time By Ping</h5>
-        <h6>Fall 2019 - Current</h6>
-      </div>
-
-    </div> 
-  </div>
-  
-    
-  <!-- Experience MODALS -->
-  <div>
-    <div id="expmodal1" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">InnoWorks</h4>
-        <h6 class="has-text-centered">President</h6>
-        <p class="flow-text">Innoworks is a club on campus that hosts a 5 day science workshop for 
-        local underprivileged middle school students. As president I directed my team in recruiting,
-        curriculum building, and resource acquisition. It was a challenging, yet rewarding experience and I was
-        lucky to have great officers working with me.</p>
-      </div>
-      <div class="modal-footer has-text-centered">
-      </div>
+        </div>	
     </div>
-
-    <div id="expmodal2" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">CS61b and CSM</h4>
-        <h6 class="has-text-centered">Lab Assistant and Mentor</h6>
-        <p class="flow-text">Ah, the class that changed my career and ultimately motivated me to drop 
-          pre-med for a pursuit in Computer Science halfway through college. I loved the class so much 
-          that I decided to mentor students as a part of Computer Science Mentors (on-campus club) and 
-          dedicate myself as a lab assistant.
-          </p>
-      </div>
-      <div class="modal-footer has-text-centered">
-      </div>
-    </div> 
-
-    <div id="expmodal3" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">[M]ovement Dance</h4>
-        <h6 class="has-text-centered">Team Director</h6>
-        <p class="flow-text">After wanting to dance since 10th grade, I finally started 
-          dancing in College. Eventually, I led my own team with two friends and performed for Movement's 
-          and Berkeley Dance Community's showcase.</p>
-      </div>
-      <div class="modal-footer has-text-centered">
-      </div>
-    </div>
-    
-    <div id="expmodal4" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">Time By Ping</h4>
-        <h6 class="has-text-centered">Software Engineer Intern</h6>
-        <p class="flow-text">At Time By Ping, I implemented a web server application that integrates with Exchange
-          email servers. I researched test server options such as AWS, rackspace, and Azure, settling on 
-          Azure for Exchange compatibility. Eventually I reimplemented the project in nodeJS for better compatibility.
-        </p>
-      </div>
-      <div class="modal-footer has-text-centered">
-        <div class="chip">NodeJS</div>
-        <div class="chip">Express</div>
-        <div class="chip">Exchange</div>
-        <div class="chip">JavaScript</div>
-      </div>
-    </div>   
-
-    <div id="expmodal5" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">Time By Ping Round 2</h4>
-        <h6 class="has-text-centered">Software Engineer </h6>
-        <p class="flow-text">I got tired of school so I went to travel. With some free time, 
-          I decided to work with Time By Ping again. Over two months I built an outlook integration to
-          track user time, performed UAT, and engaged in bug vanquishing rituals. Zap.</p>
-      </div>
-      <div class="modal-footer has-text-centered">
-        <div class="chip">Outlook</div>
-        <div class="chip">Data</div>
-        <div class="chip">NodeJS</div>
-        <div class="chip">API integration</div>
-      </div>
-    </div>
-    
-    <div id="expmodal6" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">Amazon</h4>
-        <h6 class="has-text-centered">Software Engineer Intern</h6>
-        <p class="flow-text">At Amazon I created a module that processed advertising data from over 500k active monthly users. 
-          The design process was quite a challenge and involved a large number of tradeoff analyses. Luckily, my design
-          proposal was accepted on the 2nd try after much research. Third times th-huh guess not.</p>
-      </div>
-      <div class="modal-footer has-text-centered">
-        <div class="chip">Bean</div>
-        <div class="chip">Big Data</div>
-        <div class="chip">SLA</div>
-        <div class="chip">Java</div>
-      </div>
-    </div>
-
-    <div id="expmodal7" class="modal">
-      <div class="modal-content container">
-        <h4 class="has-text-centered">Time By Ping</h4>
-        <h6 class="has-text-centered">Full-Stack Software Engineer</h6>
-        <p class="flow-text">Built a lot of Stuff here. Gonna keep building Stuff. Yeah... the good Stuff.</p>
-      </div>
-      <div class="modal-footer has-text-centered">
-        <div class="chip">.Net</div>
-        <div class="chip">WPF</div>
-        <div class="chip">NodeJS</div>
-        <div class="chip">C#</div>
-        <div class="chip">TypeScript</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- END MAIN CONTAINER-->
-  </div>
-
-
-</body>
+  </body>
 
 <!-- FOOTER -->
 <footer class="page-footer white">
@@ -303,8 +87,8 @@
     <a class="section-anchor" id="contact"></a>
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="black-text">Started from the top now we here</h5>
-        <p class="black-text">Thank you for making it this far. <br>Let's grab build and coffee together.</p>
+        <h5 class="black-text">Let's grab coffee</h5>
+        <p class="black-text">or tea</p>
       </div>
       <div class="col l4 offset-l2 s12">
         <h5 class="black-text">Me</h5>

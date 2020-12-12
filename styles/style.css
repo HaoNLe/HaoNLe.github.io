@@ -2,7 +2,7 @@
 /* layout css */
 
 body{
-	font-family: 'Lato', sans-serif;
+  font-family: 'Nanum Myeongjo', serif;
 }
 
 @media only screen and (min-width: 993px) {
@@ -53,6 +53,11 @@ strong{
 	text-align: center !important;
 }
 
+.has-text-left-aligned {
+	text-align: left !important;
+}
+
+
 .is-centered {
 	align-items: center;
 }
@@ -82,6 +87,7 @@ strong{
 }
 
 .title{
+  margin-top: 30;
 	font-family: 'Open Sans', sans-serif;
 }
 
